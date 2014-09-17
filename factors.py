@@ -1,8 +1,12 @@
 def factors(n):
   ret = []
+  div = 2
   while(n > 3):
-    ret += [2]
-    n = n/2
-    
-  ret += [n]
+    if(n%div == 0):
+      ret += [div]
+      n = n/div
+      div = 2
+    else:
+      div += 1
+
   return ret
