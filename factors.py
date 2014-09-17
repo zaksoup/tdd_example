@@ -1,2 +1,2 @@
 def factors(n):
-  return
+  return 2
