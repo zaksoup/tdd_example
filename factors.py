@@ -1,7 +1,7 @@
 def factors(n):
   ret = []
   div = 2
-  while(n > 3):
+  while(n >= 2):
     if(n%div == 0):
       ret += [div]
       n = n/div
